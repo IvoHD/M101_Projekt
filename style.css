@@ -1,3 +1,38 @@
 .red {
     color: red;
 }
+
+.gototopbtn
+{
+  color: rgb(255, 0, 0);
+  display: none;
+  font-size: 32px;
+  animation: fadeIn 2s;
+}
+
+.gototopcontainer
+{
+  position: fixed;
+  top: 8.5%;
+  left: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.toStart
+{
+  display: none;
+}
+
+@keyframes fadeIn
+{
+  from
+  {
+    opacity: 0;
+  }
+
+  to 
+  {
+    opacity: 1;
+  }
+}
