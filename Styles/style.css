@@ -1,0 +1,33 @@
+.red {
+    color: red;
+}
+
+.gototopbtn
+{
+  color: rgb(255, 0,  );
+  opacity: 0;
+  font-size: 32px;
+  transition: opacity 1s;
+}
+
+.gototopbtn.show {
+  opacity: 1;
+}
+
+.gototopcontainer
+{
+  position: fixed;
+  top: 8.5%;
+  left: 50%;
+  height: 30px;
+  width: 30px;
+}
+.flex
+{
+  display: flex;
+}
+
+.flex2
+{
+  display: flex 
+}
