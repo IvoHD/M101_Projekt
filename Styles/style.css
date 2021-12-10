@@ -22,6 +22,28 @@
   height: 30px;
   width: 30px;
 }
+
+#navigation-container {
+  display: flex;
+
+  background-color: #692a5c;
+  padding: 0 20px;
+}
+
+.navigation-item {
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: auto;
+  font-size: 20px;
+}
+
+.navigation-item:hover
+{
+  background-color: rgb(39, 175, 22);
+}
+
 .flex
 {
   display: flex;
