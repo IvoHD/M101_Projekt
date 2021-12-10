@@ -1,17 +1,14 @@
-.red {
-    color: red;
-}
 
 .gototopbtn
 {
-  color: rgb(255, 0,  );
+  color: rgb(255, 0, 0);
   opacity: 0;
   font-size: 32px;
   transition: opacity 1s;
 }
 
 .gototopbtn.show {
-  opacity: 1;
+  opacity: 1; 
 }
 
 .gototopcontainer
@@ -23,11 +20,13 @@
   width: 30px;
 }
 
-#navigation-container {
+.navigation-container {
   display: flex;
-
-  background-color: #692a5c;
+  background-image: url(../Images/Background.jpg);
+  background-size: 100%;
   padding: 0 20px;
+  height: 200px;
+  background-position-y: 48%;
 }
 
 .navigation-item {
@@ -41,8 +40,10 @@
 
 .navigation-item:hover
 {
-  background-color: rgb(39, 175, 22);
+  background-color: rgb(212, 46, 55);
 }
+
+
 
 .flex
 {
