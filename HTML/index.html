@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/swipestyle.css">
     <script src="../Scripts/script.js"></script>
     <script src="../Scripts/fontA.js"></script>
+    <script src="../Scripts/slidescript.js"></script>
+
+
+
 
     <title>Lampen</title>
 </head>
@@ -24,6 +29,26 @@
         <img style="margin-left: auto;" src="../Images/Logo.png">
     </div>
 
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <img class="swiper-slide" src="../Images/Denovo.jpg">
+              <img class="swiper-slide position-top" src="../Images/Nathan.jpg">
+              <img class="swiper-slide position-top" src="../Images/Hutomo.jpg">
+              <img class="swiper-slide" src="../Images/Denovo.jpg">
+              <img class="swiper-slide" src="../Images/Sven.jpg">
+              <img class="swiper-slide" src="../Images/Samuel.jpg">
+              <img class="swiper-slide" src="../Images/Pierre.jpg">
+              <img class="swiper-slide" src="../Images/Denovo.jpg">
+              <img class="swiper-slide jonny" src="../Images/Jonny.jpg">
+              <img class="swiper-slide" src="../Images/Denovo.jpg">
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+      <!-- Initialize Swiper -->
+  
+
      
     <!-- <div class="flex">
         <div class="flex2">
@@ -39,5 +64,14 @@
         </div>
     </div>
     -->
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    </script>
 </body>
 </html>

@@ -36,6 +36,7 @@
   text-decoration: none;
   margin-top: auto;
   font-size: 20px;
+  text-shadow: 1px 2px #000;
 }
 
 .navigation-item:hover
