@@ -1,4 +1,7 @@
-
+body {
+  margin: 0px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .gototopbtn
 {
   color: rgb(255, 0, 0);
@@ -26,7 +29,7 @@
   background-size: 100%;
   padding: 0 20px;
   height: 200px;
-  background-position-y: 48%;
+  background-position-y: 52%;
 }
 
 .navigation-item {
@@ -42,16 +45,70 @@
 .navigation-item:hover
 {
   background-color: rgb(212, 46, 55);
+  animation: fadeIn 0.5s;
 }
 
 
 
-.flex
+.container
 {
   display: flex;
+  height: 800px;
+  width: 80%;
+  margin: auto;
 }
 
-.flex2
+.container2
 {
-  display: flex 
+  display: flex;
+  flex-direction: column;
+  height: 800px; 
+  width: 50%;
+  margin: 50px;
+}
+
+.container3
+{
+  display: flex;
+  height: 400px; 
+  margin: 20px;
+}
+
+.container4
+{
+  display: flex;
+  height: 800px;
+  width: 50%; 
+}
+
+.item {
+  width: 50%;
+  font-size: 28px;
+}
+
+.imgitem{
+  width: 360px;
+  height: 375px;
+  padding: 10px;
+}
+
+.imgitem2{
+  width: 360px;
+  height: 795px;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+@keyframes fadeIn
+{
+  from
+  {
+    opacity: 0;
+  }
+
+  to 
+  {
+    opacity: 1;
+  }
 }
