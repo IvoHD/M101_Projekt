@@ -9,10 +9,13 @@
     <script src="../Scripts/script.js"></script>
     <script src="../Scripts/fontA.js"></script>
     <script src="../Scripts/slidescript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <title>Lampen</title>
 </head>
 <body>
+
     <div class="gototopcontainer">
         <div class="gototopbtn" onclick="gototop()" id="gototopbtn"><i class="fa fa-arrow-up"></i></div>
     </div>
@@ -43,34 +46,42 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-        <br>
+
+           <!-- Swiper initialisation -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
         <div class="container">
             <div class="container2">
-                <div class="container3 item-r">
-                    <img class="imgitem img-r" src="../Images/Samuel.jpg">
-                    <div class="item" style="flex-grow: 2;">
-                        <h2>Wohnzimmer</h2>
+                <div class="container3">
+                    <img class="imgitem" src="../Images/Samuel.jpg">
+                    <div class="item itemtext" style="flex-grow: 2;">
+                        <h2>Schlafzimmer</h2>
                         <p>
                             Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad
                         </p>
                     </div>
                 </div> 
-                <div class="container3 item-l">
-                    <div class="item" style="flex-grow: 2;">
+                <div class="container3">
+                    <div class="item itemtext" style="flex-grow: 2;">
                         <h2>Badezimmer</h2> 
                         <p>
                             Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad
                         </p>
                     </div>
-                        <img class="imgitem img-l" src="../Images/Denovo.jpg">
+                        <img class="imgitem" src="../Images/Denovo.jpg">
                 </div>
             </div>
             <div class="container4">
                 <img class="imgitem2" src="../Images/Nathan.jpg">
-                <div class="item" style="flex-grow: 2;">
-                    <h2>Schlafzimmer</h2>
+                <div class="item itemtext" style="flex-grow: 2;">
+                    <h2>Wohnzimmer</h2>
                     <p>
-                        Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.
                         Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.
                         Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.
                     </p>
@@ -78,13 +89,28 @@
             </div>
         </div>
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-    </script>
+        <footer>
+            <img class="footerlogo" src="../Images/Logo.png">
+            <div class="footertext"></div>
+                <p> &copy; 2022 Schuber, Inc. <br>
+            </div>
+            <div class="footer-container" id="navigation-container">
+                <a href="#" class="footer-item">DATENSCHUTZRICHTLINIE</a>
+                <a href="#" class="footer-item">NUTZUNGSBEDINGUNGEN</a>
+                <a href="#" class="footer-item">COOKIE-RICHTLINIE</a>
+                <a href="#" class="footer-item">FIRMENINFORMATIONEN</a>
+            </div>
+
+            <div class="footer-container" id="navigation-container">
+                <ion-icon href="#" class="footer-item" name="logo-youtube"></ion-icon>
+                <ion-icon href="#" class="footer-item" name="logo-twitter"></ion-icon>
+                <ion-icon href="#" class="footer-item" name="logo-facebook"></ion-icon>
+                <ion-icon href="#" class="footer-item" name="logo-instagram"></ion-icon>
+                <ion-icon href="#" class="footer-item" name="logo-reddit"></ion-icon>
+            </div>
+          
+        </footer>
+
+
 </body>
 </html>
