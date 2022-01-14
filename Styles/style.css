@@ -160,7 +160,17 @@ footer {
 {
   height: 100px;
   width: 100px;
-  margin: auto;
+}
+
+.background-circle
+{
+  top: 120px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px; 
+  background-color: white;
+  margin: 9px auto 0 auto;
+  border: solid black 2px;
 }
 
 .footer-container {
@@ -198,6 +208,22 @@ footer {
 
 .text h1 {
   font-size: 40px;
+}
+
+.privacytitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.privacysubtitle {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.privacytext {
+  font-size: 32px;
+  margin: 0 20% 0 20%;
 }
 
 iframe {
