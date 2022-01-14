@@ -106,19 +106,58 @@ hr {
   flex-wrap: wrap;
 }
 
+/* display: flex; funktioniert nach ".popout" nicht mehr... Wieso */
 .container6 {
   display: flex;
-  width: 15%;
+  width: 40%;
   margin: 20px 40px;
+  height: 375px;
   flex-wrap: wrap;
+  /* Funktioniert nicht, wieso?
+  border-style: solid black;
+  border: 4px 0 4px 4px;
+  */
+
+}
+.popout {
+  visibility: hidden;
+  position: absolute;
+  height: 375px;
+  left: 35%;
+  width: 0;
+  background-color: rgb(218, 72, 72);
+  transition: width 2s;
+  /* Funktioniert nicht, wieso?
+  border-style: solid black;
+  border: 4px 4px 4px 0;
+  */
+}
+
+.popout-l {
+  visibility: hidden;
+  height: 375px;
+  left: 35%;
+  width: 0;
   background-color: rgb(218, 72, 72);
   transition: width 2s;
 }
-
-.container6:hover {
-  width: 50%;
+.popout h1 {
+  font-family: 'Pacifico';
+  font-weight: bold;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
 }
 
+.popout div {
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 16px;
+}
+.container6:hover > .popout {
+  visibility: visible;
+  position: absolute;
+  width: 50%;
+  
+}
 .item {
   width: 50%;
   font-size: 28px;
@@ -223,7 +262,7 @@ footer {
 
 .privacytext {
   font-size: 32px;
-  margin: 0 20% 0 20%;
+  margin: 0 20% 100px 20%;
 }
 
 iframe {
