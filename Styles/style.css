@@ -10,7 +10,13 @@ ion-icon {
 hr {
   width: 25%;
   margin: 10px auto;
+  border-color: black;
 }
+
+.center {
+  text-align: center;
+}
+
 .gototopbtn
 {
   color: rgb(255, 0, 0);
@@ -121,7 +127,6 @@ hr {
 }
 .popout {
   visibility: hidden;
-  position: absolute;
   height: 375px;
   left: 35%;
   width: 0;
@@ -157,6 +162,33 @@ hr {
   position: absolute;
   width: 50%;
   
+}
+
+.leitbildtxt {
+  border: solid black 2px;
+  height: 300px;
+  background-color: rgba(252, 54, 169, 0.555);
+  margin: 50px 15%;
+  font-size: 26px;
+}
+
+.Ziele-Container {
+  display: flex;
+  margin: 50px 20%;
+}
+
+.Ziele-Container div {
+  padding: 20px;
+  width: 650px;
+  font-size: 20px;
+}
+
+.Ziele-Container div hr{
+width: 80%;
+}
+
+.Ziele-Container div h1{
+  font-family: 'Pacifico';
 }
 .item {
   width: 50%;
@@ -245,7 +277,7 @@ footer {
   font-size: 20px;
 }
 
-.text h1 {
+h1 {
   font-size: 40px;
 }
 
