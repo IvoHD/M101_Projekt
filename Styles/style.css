@@ -11,6 +11,33 @@ hr {
   width: 25%;
   margin: 10px auto;
 }
+
+.tab {
+	tab-size:30; 
+	white-space: pre;
+}
+
+.number {
+  text-align: center;
+}
+
+.number div {
+  text-align: left;
+}
+
+.number div p {
+  margin: 0;
+}
+
+.numbercontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.numbercontainer div {
+  margin: 20px;
+}
+
 .gototopbtn
 {
   color: rgb(255, 0, 0);
