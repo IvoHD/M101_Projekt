@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  background-color: #FCF6F5FF;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -42,26 +43,65 @@ hr {
 .numbercontainer div {
   margin: 20px;
 }
+
 label {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+input {
+  margin-bottom: 10px;
+  height: 17px;
+  width: 180px;
+}
+
+input[type=date] {
+  margin-bottom: 10px;
+  height: 17px;
+  /*width ist bei input type="date" automatisch etwas kleiner, deswegen seperate Klasse*/
+  width: 182px;
+}
+
+input[type=submit] {
+  height: 28px;
+  margin:auto;
+  width: 407px;
+  font-size: 20px;
+  background-color: rgb(212, 46, 55);
+  transition: background-color 0.5s;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(255, 0, 0, 0.664);
+}
+
+select {
+  margin-bottom: 10px;
+  height: 30px;
+  width: 188px;
+}
+
+.message {
+  height: 150px;
+  width: 400px;
 }
 
 .formcontainer {
   display: flex;
   justify-content: center;
-  height: 800px;
-  width: 600px;
 }
+
 .inputcontainer {
   display: flex;
 }
+
 .inputcontainer div {
   margin: 20px;
 }
+
 .gototopbtn
 {
-  color: rgb(255, 0, 0);
+  color:#990011FF;
   opacity: 0;
   font-size: 32px;
   transition: opacity 1s;
@@ -75,7 +115,7 @@ label {
 {
   position: fixed;
   top: 8.5%;
-  left: 50%;
+  left: 49.5%;
   height: 30px;
   width: 30px;
   z-index: 100;
@@ -102,9 +142,8 @@ label {
   transition: background-color 1s;
 }
 
-.navigation-item:hover
-{
-  background-color: rgb(212, 46, 55);
+.navigation-item:hover {
+  background-color: #990011FF
 }
 
 
@@ -208,10 +247,11 @@ label {
 
 .leitbildtxt {
   border: solid black 2px;
-  height: 300px;
-  background-color: rgba(235, 54, 252, 0.555);
+  height: 300px; 
+  background-color: #b388ff87;
   margin: 50px 15%;
   font-size: 26px;
+  padding: 20px;
 }
 
 .Ziele-Container {
@@ -232,6 +272,45 @@ width: 80%;
 .Ziele-Container div h1{
   font-family: 'Pacifico';
 }
+
+.Schubercontainer {
+  display: flex;
+  margin: 0 21%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.SchuberItem {
+  background-color: rgb(218, 72, 72);
+  height: 600px;
+  width: 440px;
+  margin: 50px;
+  justify-content: start;
+  border: solid black 2px;
+}
+.SchuberItemImg {
+  height: 50%;
+  width: 100%;
+}
+
+.SchuberItemText {
+  font-size: 35px;
+  padding: 10px;
+}
+
+.SchuberItemText hr {
+  width: 80%;
+}
+
+.SchuberItemText a {
+  text-decoration: none;
+  color: blue;
+}
+
+.SchuberItemText a h1{
+  font-size: 35px;
+}
+
 .item {
   width: 50%;
   font-size: 28px;
@@ -269,14 +348,12 @@ footer {
   margin-top: 100px;
 }
 
-.footerlogo
-{
-  height: 100px;
+.footerlogo {
+ height: 100px;
   width: 100px;
 }
 
-.background-circle
-{
+.background-circle {
   top: 120px;
   border-radius: 50%;
   width: 120px;
@@ -299,7 +376,7 @@ footer {
   font-weight: bold;
   text-decoration: none;
   border-radius: 20px;
-  transition: background-color 1s;
+  transition: background-color 0.5s;
 }
 
 .footer-item:hover{
@@ -311,11 +388,11 @@ footer {
 }
 
 .text p {
-  font-size: 30px;
+  font-size: 32px;
+  margin: 0 20% 0px 20%;
 }
 
-.text p span
-{
+.text p span {
   font-size: 20px;
 }
 
@@ -332,12 +409,9 @@ h1 {
   display: inline-block;
   font-weight: bold;
   font-size: 40px;
+  margin: 100px 0 20px 0 !important
 }
 
-.privacytext {
-  font-size: 32px;
-  margin: 0 20% 100px 20%;
-}
 
 iframe {
   border: solid black 5px;

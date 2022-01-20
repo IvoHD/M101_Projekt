@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="uft-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="../Styles/style.css">
     <script src="../Scripts/script.js"></script>
+    <script src="../Scripts/fontA.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <title>Produkte & Dienstleistungen</title>
 </head>
+
 <body>
     <div class="gototopcontainer">
         <div class="gototopbtn" onclick="gototop()" id="gototopbtn"><i class="fa fa-arrow-up"></i></div>
@@ -18,7 +21,6 @@
         <a href="index.html" class="navigation-item">Startseite</a>
         <a href="Über uns.html" class="navigation-item">Über uns</a>
         <a href="Produkte & Dienstleistungen.html" class="navigation-item">Produkte & Dienstleistungen</a>
-        <a href="Produktion.html" class="navigation-item">Produktion</a>
         <a href="Team.html" class="navigation-item">Team</a>
         <a href="Kontakt.html" class="navigation-item">Kontakt</a>
         <img style="margin-left: auto;" src="../Images/Logo.png">
@@ -31,18 +33,18 @@
 
         <div class="numbercontainer">
             <div>
-                <p>Administation:</p>
+                <p>Administration:</p>
                 <p>Techische Fragen:</p>
                 <p>Bestellung:</p>
             </div>
-            <div> 
+            <div>
                 <p>041 555 25 05</p>
                 <p>041 555 25 06</p>
                 <p>041 555 25 07</p>
             </div>
-        </div>        
+        </div>
     </div>
-    <form>
+    <form  onsubmit="formmessage()">
         <div class="formcontainer">
             <div class="inputcontainer">
                 <div>
@@ -53,20 +55,40 @@
                     <label for="Age">Jahrgang: </label>
                     <br>
                     <label for="mail">E-Mail: </label>
+                    <br>
+                    <label for="phone">Mobile: </label>
+                    <br>
+                    <label for="issue">Anliegen: </label>
+                    <br>
+                    <a href="privacy.html" style="font-size: small;"> Was passiert mit meinen Daten?</a>
                 </div>
                 <div>
-                    <input type="text" id="Name" placeholder="Muster">
+                    <input type="text" id="Name" placeholder="Muster" required>
                     <br>
-                    <input type="text" id="Firstname" placeholder="Max">
+                    <input type="text" id="Firstname" placeholder="Max" required>
                     <br>
-                    <input type="date" id="Age">
+                    <input type="date" id="Age" required>
                     <br>
-                    <input type="mail" id="mail" placeholder="Max_Muster@gmail.com">
+                    <input type="email" id="mail" placeholder="Max_Muster@gmail.com" required>
+                    <br>
+                    <input type="number" id="phone" required>
+                    <br>
+                    <select class="input" name="choices" id="issue">
+                        <option value="admin">Administration</option>
+                        <option value="tec">Technische Fragen</option>
+                        <option value="order" selected>Bestellung</option>
+                    </select>
                 </div>
-                
+
             </div>
             <div>
-
+                Nachricht(Optional):
+                <br>
+                <input class="message" type="text" id="message">
+                <br>
+                <div class="center">
+                    <input type="submit" value="SENDEN">
+                </div>
             </div>
         </div>
 
@@ -78,8 +100,8 @@
             </a>
         </div>
         <div class="footertext"></div>
-            <p> &copy; 2022 Schuber, Inc. <br>
-        </div>
+        <p> &copy; 2022 Schuber, Inc. <br>
+            </div>
         <div class="footer-container" id="navigation-container">
             <a href="privacy.html" class="footer-item">DATENSCHUTZRICHTLINIE</a>
             <a href="#" class="footer-item">NUTZUNGSBEDINGUNGEN</a>
@@ -89,7 +111,7 @@
 
         <div class="footer-container" id="navigation-container">
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">
-                <ion-icon class="footer-item" name="logo-youtube"></ion-icon>    
+                <ion-icon class="footer-item" name="logo-youtube"></ion-icon>
             </a>
             <a href="https://twitter.com/rickastley" target="blank">
                 <ion-icon href="#" class="footer-item" name="logo-twitter"></ion-icon>
@@ -101,10 +123,11 @@
                 <ion-icon href="#" class="footer-item" name="logo-instagram"></ion-icon>
             </a>
             <a href="https://www.reddit.com/user/ReallyRickAstley/" target="blank">
-                <ion-icon href="#" class="footer-item" name="logo-reddit"></ion-icon>  
+                <ion-icon href="#" class="footer-item" name="logo-reddit"></ion-icon>
             </a>
         </div>
     </footer>
 
 </body>
+
 </html>
