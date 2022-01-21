@@ -50,7 +50,12 @@ button:hover {
 .cart:hover {
   background-color: rgb(240, 53, 63);
 }
-
+.productsub {
+  background-color: rgb(129, 128, 128);
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
 .productcontainer {
   display: flex;
   margin: 50px auto;
@@ -342,8 +347,7 @@ width: 80%;
 }
 
 .products h2{
-  font-size: 30px;
-  text-align: left;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -353,6 +357,7 @@ width: 80%;
   margin: 50px auto;
   background-color: rgb(218, 72, 72);
   border: solid black 4px;
+  max-height: 700px;
 }
 
 .productcontainer2 img {
@@ -366,6 +371,7 @@ width: 80%;
 
 .productcontainer2 div h1{
   font-family: "pacifico";
+  font-size: 40px;
 }
 
 .productcontainer2 div hr{
@@ -374,7 +380,7 @@ width: 80%;
 
 .productcontainer2 div p{
   margin: 0px;
-  font-size: 22px;
+  font-size: 32px;
 }
 
 .Schubercontainer {
@@ -469,7 +475,6 @@ footer {
 
 .footer-container {
   display: flex;
-  /* max-width: 80%; */
   padding: 0 20px; 
   justify-content: center;
 }
