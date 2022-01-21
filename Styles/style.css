@@ -18,6 +18,81 @@ hr {
   text-align: center;
 }
 
+.buttoncontainer {
+  text-align: right;
+  padding-right: 100px;
+}
+
+button {
+  background-color: rgb(197, 197, 197);
+  color: white;
+  border-radius: 25px;
+  font-size: 20px;
+  padding: 15px;
+  margin: 20px 30px 0 30px;
+  box-shadow: 2px 4px #000;
+  transition: background-color 0.5s;
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(122, 122, 122);
+}
+
+.cart {
+  background-color: rgb(212, 46, 55);
+  transition: background-color 0.5s;
+  border-radius: 50%;
+  border: solid black 2px;
+  box-shadow: none;
+}
+
+.cart:hover {
+  background-color: rgb(240, 53, 63);
+}
+
+.productcontainer {
+  display: flex;
+  margin: 50px auto;
+  padding-right: 50px;
+  width: 1100px;
+  background-color:rgb(218, 72, 72);
+  border: solid black 4px;
+}
+
+.productcontainer img {
+  width: 50%;
+}
+
+.productcontainer div {
+  display: flex;
+  padding: 20px 0 20px 20px;
+  font-size: 30px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.productcontainer div div {
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.productcontainerexception {
+  display: block !important;
+  margin: 50px;
+}
+.productcontainer div div div{
+  width: 40%;
+  text-align: left;
+}
+
+.productcontainer div hr {
+  width: 70%;
+}
+
+.productcontainer div p {
+  margin: 0;
+}
+
 .teamcontainer {
   display: flex;
   margin: 50px 21%;
@@ -67,6 +142,7 @@ hr {
   background-color: grey;
   width: 100%;
 }
+
 li {
   font-size: 30px;
   margin-bottom: 20px;
@@ -233,67 +309,6 @@ select {
   background-color: rgb(218, 72, 72);
 }
 
-.container5 {
-  display: flex;
-  height: 800px;
-  width: 80%;
-  margin: auto;
-  margin-top: 80px;
-  flex-wrap: wrap;
-}
-
-/* display: flex; funktioniert nach ".popout" nicht mehr... Wieso */
-.container6 {
-  display: flex;
-  width: 40%;
-  margin: 20px 40px;
-  height: 375px;
-  flex-wrap: wrap;
-  /* Funktioniert nicht, wieso?
-  border-style: solid black;
-  border: 4px 0 4px 4px;
-  */
-
-}
-.popout {
-  visibility: hidden;
-  height: 375px;
-  left: 35%;
-  width: 0;
-  background-color: rgb(218, 72, 72);
-  transition: width 2s;
-  /* Funktioniert nicht, wieso?
-  border-style: solid black;
-  border: 4px 4px 4px 0;
-  */
-}
-
-.popout-l {
-  visibility: hidden;
-  height: 375px;
-  left: 35%;
-  width: 0;
-  background-color: rgb(218, 72, 72);
-  transition: width 2s;
-}
-.popout h1 {
-  font-family: 'Pacifico';
-  font-weight: bold;
-  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
-}
-
-.popout div {
-  margin-left: 80px;
-  margin-right: 80px;
-  font-size: 16px;
-}
-.container6:hover > .popout {
-  visibility: visible;
-  position: absolute;
-  width: 50%;
-  
-}
-
 .leitbildtxt {
   border: solid black 2px;
   height: 300px; 
@@ -320,6 +335,46 @@ width: 80%;
 
 .Ziele-Container div h1{
   font-family: 'Pacifico';
+}
+
+.products {
+  margin: 0 20%;
+}
+
+.products h2{
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.productcontainer2 {
+  display: flex;
+  width: 1200px;
+  margin: 50px auto;
+  background-color: rgb(218, 72, 72);
+  border: solid black 4px;
+}
+
+.productcontainer2 img {
+  width: 50%;
+}
+
+.productcontainer2 div {
+  width: 50%;
+  padding: 0 100px;
+}
+
+.productcontainer2 div h1{
+  font-family: "pacifico";
+}
+
+.productcontainer2 div hr{
+  width: 70%;
+}
+
+.productcontainer2 div p{
+  margin: 0px;
+  font-size: 22px;
 }
 
 .Schubercontainer {

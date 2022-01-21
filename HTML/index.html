@@ -1,107 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="uft-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../Styles/style.css">
-    <link rel="stylesheet" href="../Styles/swipestyle.css">
-    <script src="../Scripts/script.js"></script>
-    <script src="../Scripts/fontA.js"></script>
-    <script src="../Scripts/slidescript.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <title>Lampen</title>
-</head>
-<body>
+        <link rel="stylesheet" href="../Styles/style.css">
+        <link rel="stylesheet" href="../Styles/swipestyle.css">
+        <script src="../Scripts/script.js"></script>
+        <script src="../Scripts/fontA.js"></script>
+        <script src="../Scripts/slidescript.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <title>Lampen</title>
+    </head>
+    <body>
 
-    <div class="gototopcontainer">
-        <div class="gototopbtn" onclick="gototop()" id="gototopbtn"><i class="fa fa-arrow-up"></i></div>
-    </div>
-    <!-- Nav -->
-    <div class="navigation-container" id="navigation-container">
-        <a href="#" class="navigation-item">Startseite</a>
-        <a href="Über uns.html" class="navigation-item">Über uns</a>
-        <a href="Produkte & Dienstleistungen.html" class="navigation-item">Produkte & Dienstleistungen</a>
-        <a href="Team.html" class="navigation-item">Team</a>
-        <a href="Kontakt.html" class="navigation-item">Kontakt</a>
-        <img style="margin-left: auto;" src="../Images/Logo.png">
-    </div>
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <img class="swiper-slide" src="../Images/Denovo.jpg">
-            <img class="swiper-slide position-top" src="../Images/Nathan.jpg">
-            <img class="swiper-slide position-top" src="../Images/Hutomo.jpg">
-            <img class="swiper-slide" src="../Images/Denovo.jpg">
-            <img class="swiper-slide" src="../Images/Sven.jpg">
-            <img class="swiper-slide" src="../Images/Samuel.jpg">
-            <img class="swiper-slide" src="../Images/Pierre.jpg">
-            <img class="swiper-slide" src="../Images/Denovo.jpg">
-            <img class="swiper-slide jonny" src="../Images/Jonny.jpg">
-            <img class="swiper-slide" src="../Images/Denovo.jpg">
+        <div class="gototopcontainer">
+            <div class="gototopbtn" onclick="gototop()" id="gototopbtn"><i class="fa fa-arrow-up"></i></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
+        <div class="navigation-container" id="navigation-container">
+            <a href="#" class="navigation-item">Startseite</a>
+            <a href="Über uns.html" class="navigation-item">Über uns</a>
+            <a href="Produkte & Dienstleistungen.html" class="navigation-item">Produkte & Dienstleistungen</a>
+            <a href="Team.html" class="navigation-item">Team</a>
+            <a href="Kontakt.html" class="navigation-item">Kontakt</a>
+            <img style="margin-left: auto;" src="../Images/Logo.png">
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <img class="swiper-slide" src="../Images/Denovo.jpg">
+                <img class="swiper-slide position-top" src="../Images/Nathan.jpg">
+                <img class="swiper-slide position-top" src="../Images/Hutomo.jpg">
+                <img class="swiper-slide" src="../Images/Denovo.jpg">
+                <img class="swiper-slide" src="../Images/Sven.jpg">
+                <img class="swiper-slide" src="../Images/Samuel.jpg">
+                <img class="swiper-slide" src="../Images/Pierre.jpg">
+                <img class="swiper-slide" src="../Images/Denovo.jpg">
+                <img class="swiper-slide jonny" src="../Images/Jonny.jpg">
+                <img class="swiper-slide" src="../Images/Denovo.jpg">
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
 
         <!-- Swiper initialisation -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-
-    <!-- Content -->
-    <div class="container">
-        <div class="container2">
-            <div class="container3">
-                <img class="imgitem" src="../Images/Samuel.jpg">
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+        <div class="container">
+            <div class="container2">
+                <div class="container3">
+                    <img class="imgitem" src="../Images/Samuel.jpg">
+                    <div class="item itemtext" style="flex-grow: 2;">
+                        <h2>Schlafzimmer</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad
+                        </p>
+                    </div>
+                </div> 
+                <div class="container3">
+                    <div class="item itemtext" style="flex-grow: 2;">
+                        <h2>K&uuml;che</h2> 
+                        <p>
+                            Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad
+                        </p>
+                    </div>
+                        <img class="imgitem" src="../Images/Denovo.jpg">
+                </div>
+            </div>
+            <div class="container4">
+                <img class="imgitem2" src="../Images/Nathan.jpg">
                 <div class="item itemtext" style="flex-grow: 2;">
-                    <h2>Schlafzimmer</h2>
+                    <h2>Wohnzimmer</h2>
                     <p>
-                        Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad
+                        Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.
                     </p>
                 </div>
-            </div> 
-            <div class="container3">
-                <div class="item itemtext" style="flex-grow: 2;">
-                    <h2>Badezimmer</h2> 
-                    <p>
-                        Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad
-                    </p>
-                </div>
-                    <img class="imgitem" src="../Images/Denovo.jpg">
             </div>
         </div>
-        <div class="container4">
-            <img class="imgitem2" src="../Images/Nathan.jpg">
-            <div class="item itemtext" style="flex-grow: 2;">
-                <h2>Wohnzimmer</h2>
-                <p>
-                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.
-                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.
-                </p>
-            </div>
-        </div>
-    </div>
 
-    <div class="text">
-    <h1>Showroom</h1>
-    <hr>
-    <p> In unserem Showroom in Rümlang finden Sie alle unsere Produkte der diesjährigen Serie ausgestellt. <br> Kommen Sie vorbei und lassen Sie Sich inspirieren!<br><br>
-        <span>
-            Showroom Schuber Lampen<br>
-            Kehlweg 19 <br>
-            Rümlang <br> <br>
-        </span>
-    </p>
-    <iframe class="border"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2221235.8651284855!2d7.628261665036411!3d49.71834844541765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd943f68506d81%3A0x945a332b97ab000d!2sKehlweg%2019%2C%2055124%20Mainz%2C%20Deutschland!5e0!3m2!1sde!2sch!4v1641548403794!5m2!1sde!2sch" width="1200" height="650" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    
-    <!-- Footer -->
+        <div class="text">
+        <h1>Showroom</h1>
+        <hr>
+        <p> In unserem Showroom in Rümlang finden Sie alle unsere Produkte der diesjährigen Serie ausgestellt. <br> Kommen Sie vorbei und lassen Sie Sich inspirieren!<br><br>
+            <span>
+                Showroom Schuber Lampen<br>
+                Kehlweg 19 <br>
+                Rümlang <br> <br>
+            </span>
+        </p>
+        <iframe class="border"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2221235.8651284855!2d7.628261665036411!3d49.71834844541765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd943f68506d81%3A0x945a332b97ab000d!2sKehlweg%2019%2C%2055124%20Mainz%2C%20Deutschland!5e0!3m2!1sde!2sch!4v1641548403794!5m2!1sde!2sch" width="1200" height="650" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </body>
     <footer>
         <div class="background-circle">
             <a href="index.html">
@@ -111,13 +105,14 @@
         <div class="footertext"></div>
             <p> &copy; 2022 Schuber, Inc. <br>
         </div>
-        <div class="footer-container" id="navigation-container">
+        <div class="footer-container">
             <a href="privacy.html" class="footer-item">DATENSCHUTZRICHTLINIE</a>
             <a href="#" class="footer-item">NUTZUNGSBEDINGUNGEN</a>
             <a href="#" class="footer-item">COOKIE-RICHTLINIE</a>
             <a href="#" class="footer-item">FIRMENINFORMATIONEN</a>
         </div>
-        <div class="footer-container" id="navigation-container">
+
+        <div class="footer-container">
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">
                 <ion-icon class="footer-item" name="logo-youtube"></ion-icon>    
             </a>
@@ -135,7 +130,4 @@
             </a>
         </div>
     </footer>
-
-
-</body>
 </html>
