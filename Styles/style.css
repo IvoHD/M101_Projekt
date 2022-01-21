@@ -31,7 +31,9 @@ hr {
   background-color: rgb(218, 72, 72);
   padding-bottom: 20px;
   margin: 30px 100px;
+  border: solid black 4px;
 }
+
 .teamitem div{
   text-align: center;
 }
@@ -49,12 +51,14 @@ hr {
   margin: 0 20%;
   border: solid black 2px;
 }
+
 .smartcontainer div {
   text-align: left;
   width: 50%;
   border: solid black 1px;
   padding: 0 35px;
 }
+
 .smartcontainer div div {
   margin: 0;
   text-align: center;
